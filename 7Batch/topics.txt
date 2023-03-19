@@ -1,0 +1,37 @@
+
+How internet works ?
+
+Why Web Development required ?
+
+Where it is used ?
+
+chatGPT
+userId = abc - product1 - tshirt - price, size,material
+
+HTML
+    
+List and Table
+
+Activity
+Create a web page using tables
+
+11 - March 2023
+CSS - Cascading Style Sheet
+
+Types of CSS:
+        1) Inline CSS ******
+        2) Internal CSS **********
+        id  (#) - it should be unique on the same page
+        class (.) - we can have multiple elements with same class name
+        3) External CSS ******************************
+
+
+GYM Website
+
+navigation bar - Home, About,Services,Contact,Gallery 
+Images, Videos, Google map in contact page
+https://www.galaxyfitnessclub.in/
+
+
+mini Project for  tomorrow
+create a web page with a prompt and show greet message on the html body ?

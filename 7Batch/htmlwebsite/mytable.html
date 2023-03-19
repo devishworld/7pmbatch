@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border: 2px solid red;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th{
+            border: 2px solid blue;
+            background-color: aquamarine;
+        }
+        td{
+            border: 2px solid green;
+            background-color: bisque;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>Creating Table</h2>
+    <table style="width:50%">
+        <legend style="text-align: center; width: 50%;">Student Details</legend>
+        <tr style="height: 150px;">
+            <th>Sr.No.</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rajesh</td>
+            <td rowspan="2">123</td>
+            <td>r@gmail.com</td>
+            <td>WebDev</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mahesh</td>
+            <!-- <td>456</td> -->
+            <td>m@gmail.com</td>
+            <td>Python</td>
+        </tr>
+        <tr style="height: 50px;">
+            <td>3</td>
+            <td>Jitu</td>
+            <td colspan="2">789</td>
+            <!-- <td>j@gmail.com</td> -->
+            <td>Selenium</td>
+        </tr>
+    </table>
+</body>
+</html>
