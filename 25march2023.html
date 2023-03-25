@@ -1,0 +1,76 @@
+<!-- Functions  -->
+
+<!-- Syntax -->
+<!-- function myfunc(){
+    //function block code
+    //logics here
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <!-- <style>
+        div{
+            width:150px;
+            height: 40px;
+            border: 2px solid pink;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <input type="text" id="name" placeholder="enter name">
+    <button onclick="namaste()">Click Me</button>
+    <div class="greet"></div>
+    <div class="greet"></div>
+    <div class="greet"></div>
+    <div class="greet"></div>
+
+    <script>
+        function namaste(){
+            var input_field_value = document.getElementById("name").value;
+            var message = "Hello input field data =>" + input_field_value;
+            document.getElementsByClassName("greet")[3].innerHTML=message;
+        }
+    </script> -->
+
+    <!-- CALCULATOR  -->
+
+    <input type="number" id="fn">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+    </select>
+<input type="number" id="sn">
+<br><br>
+<button onclick="cal()">Calculate</button>
+<br><br>
+<input type="text" id="myresult" readonly>
+
+<script>
+    function cal(){
+        var op1 = document.getElementById("fn").value;
+        var op2 = document.getElementById("sn").value;
+        var myoperator = document.getElementById("operator").value;
+        if (myoperator == "+"){
+            var total = parseInt(op1) + parseInt(op2)
+        }
+        if (myoperator == "-"){
+            var total = parseInt(op1) - parseInt(op2)
+        }
+        if (myoperator == "*"){
+            var total = parseInt(op1) * parseInt(op2)
+        }
+        if (myoperator == "/"){
+            var total = parseInt(op1) / parseInt(op2)
+        }
+        document.getElementById("myresult").value = total;
+    }
+</script>
+</body>
+</html>
