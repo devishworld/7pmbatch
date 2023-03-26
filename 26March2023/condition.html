@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+    <style>
+        h3{
+            color: red;
+        }
+        div{
+            width: 500px;
+            height: 50px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Below your result will be displayed : </h1>
+    <div id="result">
+    </div>
+    <br><br>
+    <button onclick="getAge()">Get Age</button>
+    <script>
+        function getAge(){
+            var age = prompt("What is your age ? ");
+        if (age >=18){
+            document.getElementById("result").innerHTML="<h3>Congratz, You can Vote....</h3>";
+        }else if(age ==17){
+            document.getElementById("result").innerHTML="<h3>Please Wait for 1 more year and after that you are good to go for Voting.......</h3>";
+        }else{
+            document.getElementById("result").innerHTML="<h3>Sorry, You can not Vote until you are 18 years old....</h3>";
+        }
+        }
+    </script>
+</body>
+</html>

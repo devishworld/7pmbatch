@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Data</title>
+</head>
+<body>
+    Name : <b id="username">here name will be visible</b>
+    <br><br>
+    <button onclick="getName()">Get Name</button>
+
+    <script>
+        function getName(){
+            var promptData = prompt("What is your name ?");
+            document.getElementById("username").innerHTML=promptData;
+        }
+    </script>
+</body>
+</html>
