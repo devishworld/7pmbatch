@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON / OUT Mouse Event</title>
+    <style>
+        div{
+            background-color: antiquewhite;
+            height: 150px;
+            text-align: center;
+            padding-top: 95px;
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    
+    <div onmouseover="mouseInsideDiv(this)" onmouseout="mouseAway(this)">
+        Visit Us
+    </div>
+
+    <script>
+        function mouseInsideDiv(anything){
+            anything.innerHTML= "Thank you for becoming my Guest";
+        }
+
+        function mouseAway(anythingAgain){
+            anythingAgain.innerHTML = "Visit Us Again"
+        }
+
+    </script>
+
+</body>
+</html>
