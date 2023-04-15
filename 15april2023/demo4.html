@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut</title>
+</head>
+<body>
+    <h2>We want to stop some function before it gets triggered</h2>
+
+    <button onclick="stopfunction()">STOP IT</button>
+
+    <p id="mypara"></p>
+
+    <script>
+        var letsStop = setTimeout(hello,5000);
+        function hello(){
+            document.getElementById("mypara").innerHTML = "Good Night All";
+        }
+        function stopfunction(){
+            clearTimeout(letsStop);
+        }
+
+    </script>
+</body>
+</html>
